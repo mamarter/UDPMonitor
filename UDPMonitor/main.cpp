@@ -29,11 +29,6 @@ void clearScreen()
 									coordScreen, &chars))
 		return;
 
-	// Set the buffer's attributes accordingly.
-	if (!FillConsoleOutputAttribute(hConsole, csbi.wAttributes, 
-									consoleSize, coordScreen, &chars))                       
-		return;
-
 	// Put the cursor at the top left position
 	SetConsoleCursorPosition(hConsole, coordScreen);
 }
