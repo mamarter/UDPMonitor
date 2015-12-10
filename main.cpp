@@ -29,10 +29,6 @@ void clearScreen()
 									coordScreen, &chars))
 		return;
 
-	// Get the current text attribute.
-	if (!GetConsoleScreenBufferInfo(hConsole, &csbi))
-		return;
-
 	// Set the buffer's attributes accordingly.
 	if (!FillConsoleOutputAttribute(hConsole, csbi.wAttributes, 
 									consoleSize, coordScreen, &chars))                       

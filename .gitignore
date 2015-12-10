@@ -46,3 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.log
+*.obj
+*.tlog
+Debug/vc120.idb
+*.pdb
